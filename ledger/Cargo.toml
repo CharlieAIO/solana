@@ -2,7 +2,7 @@
 name = "solana-ledger"
 description = "Solana ledger"
 documentation = "https://docs.rs/solana-ledger"
-version = "2.2.19"
+version = "2.2.2"
 edition = "2021"
 authors = ["Solana Labs <contact@solanalabs.com>"]
 repository = "https://github.com/CharlieAIO/solana"
