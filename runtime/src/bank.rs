@@ -114,8 +114,7 @@ use {
             BankId, Epoch, Slot, SlotCount, SlotIndex, UnixTimestamp, DEFAULT_HASHES_PER_TICK,
             DEFAULT_TICKS_PER_SECOND, INITIAL_RENT_EPOCH, MAX_PROCESSING_AGE,
             MAX_TRANSACTION_FORWARDING_DELAY, MAX_TRANSACTION_FORWARDING_DELAY_GPU,
-            SECONDS_PER_DAY, UPDATED_HASHES_PER_TICK2, UPDATED_HASHES_PER_TICK3,
-            UPDATED_HASHES_PER_TICK4, UPDATED_HASHES_PER_TICK5, UPDATED_HASHES_PER_TICK6,
+            SECONDS_PER_DAY,
         },
         epoch_info::EpochInfo,
         epoch_schedule::EpochSchedule,
@@ -7259,26 +7258,6 @@ impl Bank {
 
         if new_feature_activations.contains(&feature_set::update_hashes_per_tick::id()) {
             self.apply_updated_hashes_per_tick(DEFAULT_HASHES_PER_TICK);
-        }
-
-        if new_feature_activations.contains(&feature_set::update_hashes_per_tick2::id()) {
-            self.apply_updated_hashes_per_tick(UPDATED_HASHES_PER_TICK2);
-        }
-
-        if new_feature_activations.contains(&feature_set::update_hashes_per_tick3::id()) {
-            self.apply_updated_hashes_per_tick(UPDATED_HASHES_PER_TICK3);
-        }
-
-        if new_feature_activations.contains(&feature_set::update_hashes_per_tick4::id()) {
-            self.apply_updated_hashes_per_tick(UPDATED_HASHES_PER_TICK4);
-        }
-
-        if new_feature_activations.contains(&feature_set::update_hashes_per_tick5::id()) {
-            self.apply_updated_hashes_per_tick(UPDATED_HASHES_PER_TICK5);
-        }
-
-        if new_feature_activations.contains(&feature_set::update_hashes_per_tick6::id()) {
-            self.apply_updated_hashes_per_tick(UPDATED_HASHES_PER_TICK6);
         }
     }
 
