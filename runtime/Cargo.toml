@@ -2,7 +2,7 @@
 name = "solana-runtime"
 description = "Solana runtime"
 documentation = "https://docs.rs/solana-runtime"
-version = "2.2.20"
+version = "2.2.19"
 edition = "2021"
 authors = ["Solana Labs <contact@solanalabs.com>"]
 repository = "https://github.com/CharlieAIO/solana"
